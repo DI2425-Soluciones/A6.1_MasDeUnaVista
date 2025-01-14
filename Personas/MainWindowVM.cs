@@ -9,7 +9,7 @@ namespace Personas
 {
     class MainWindowVM : ObservableObject
     {
-        private NavigationService navegacion;
+        private NavegaciónServicio navegacion;
 
         public RelayCommand AbrirNuevaPersonaCommand { get; }
         public RelayCommand AbrirListadoPersonasCommand { get; }
@@ -24,7 +24,7 @@ namespace Personas
 
         public MainWindowVM()
         {
-            navegacion = new NavigationService();
+            navegacion = new NavegaciónServicio();
 
             AbrirListadoPersonasCommand = new RelayCommand(AbrirListadoPersonas);
             AbrirNuevaPersonaCommand = new RelayCommand(AbrirNuevaPersona);

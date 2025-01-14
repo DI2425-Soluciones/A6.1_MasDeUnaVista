@@ -5,12 +5,12 @@ using System.Windows.Controls;
 
 namespace Personas
 {
-    class NavigationService
+    class NavegaciónServicio
     {
         // Se instancia aquí el objeto para conservar los datos de la vista y no se resetee.
         private static readonly UserControl VistaListadoPersonas = new ListadoPersonasUserControl();
 
-        public NavigationService()
+        public NavegaciónServicio()
         {
             
         }

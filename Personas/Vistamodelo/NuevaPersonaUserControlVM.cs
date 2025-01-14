@@ -10,7 +10,7 @@ namespace Personas
 {
     class NuevaPersonaUserControlVM : ObservableObject
     {
-        private readonly NavigationService navegacion;
+        private readonly NavegaciónServicio navegacion;
 
         private Persona _nuevaPersona;
         public Persona NuevaPersona
@@ -31,9 +31,9 @@ namespace Personas
 
         public NuevaPersonaUserControlVM()
         {
-            navegacion = new NavigationService();
+            navegacion = new NavegaciónServicio();
             NuevaPersona = new Persona("",0,"Española");
-            ListaNacionalidades = DatosService.ObtenerNacionalidades();
+            ListaNacionalidades = DatosServicio.ObtenerNacionalidades();
             AceptarNuevaPersonaCommand = new RelayCommand(AñadirPersona);
             NuevaNacionalidadCommand = new RelayCommand(AñadirNacionalidad);
         }

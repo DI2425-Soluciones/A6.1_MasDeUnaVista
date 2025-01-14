@@ -17,7 +17,7 @@ namespace Personas
 
         public ListadoPersonasUserControlVM()
         {
-            ListaPersonas = DatosService.ObtenerPersonas();
+            ListaPersonas = DatosServicio.ObtenerPersonas();
         }
     }
 }

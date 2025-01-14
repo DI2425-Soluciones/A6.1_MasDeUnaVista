@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Personas
 {
-    class DatosService
+    class DatosServicio
     {
         public static ObservableCollection<Persona> ObtenerPersonas() => new ObservableCollection<Persona> {
                 new Persona("Pietro", 30, "Italiana"),
