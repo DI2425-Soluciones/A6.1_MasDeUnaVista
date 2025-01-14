@@ -7,13 +7,15 @@ namespace Personas
 {
     class NavigationService
     {
-        private static readonly UserControl listadoPersonas = new ListadoPersonasUserControl();
+        // Se instancia aquí el objeto para conservar los datos de la vista y no se resetee.
+        private static readonly UserControl VistaListadoPersonas = new ListadoPersonasUserControl();
 
         public NavigationService()
         {
             
         }
 
+        /* Métodos para abrir o cargar las vistas: dos USER-CONTROL y un DIÁLOGO (VENTANA) */
         public UserControl ObtenerNuevaPersona()
         {
             return new NuevaPersonaUserControl();
@@ -21,7 +23,7 @@ namespace Personas
 
         public UserControl ObtenerListadoPersonas()
         {
-            return listadoPersonas;
+            return VistaListadoPersonas;
         }
 
         public bool? AbrirDialogoNacionalidad()
